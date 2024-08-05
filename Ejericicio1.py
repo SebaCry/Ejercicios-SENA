@@ -17,7 +17,3 @@ b = int(input('Ingresa un digito: '))
 
 print('-Multiplicacion=',a*b,'Division=',a//b,'Suma=',a+b,'Resta=',a-b,'Division Res=',a%b)
 print(f'-Multiplicacion={a*b},Division={a//b},Suma={a+b},Resta={a-b},Division,Res={a%b}')
-
-
-
-
