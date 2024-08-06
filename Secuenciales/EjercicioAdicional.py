@@ -16,4 +16,4 @@ p2 = proyectoFinal * 0.5 ##Declaro una variable p2 para hallar la nota segun el 
 p3 = promedioEvaluaciones * 0.2##Declaro una variable p3 para hallar la nota segun el porcentaje
 
 notaFinal = p1 + p2 + p3 ##Sumo las notas segun los porcentajes
-print(f'La nota final de algoritmia de {nombreEstudiante} es: {notaFinal}')##Imprimo el nombre del estudiante y la nota final del joven
+print(f'La nota final de algoritmia de {nombreEstudiante} es: {notaFinal}')##Imprimo el nombre del estudiante y la nota final del joven 
