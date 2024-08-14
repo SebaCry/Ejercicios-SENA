@@ -26,3 +26,5 @@ if rango_hemoglobina[0] <= hemoglobina <= rango_hemoglobina[1]:
     print('Negativo para hemoglobina 😉')
 else:
     print('Positivo para anemia, lo sentimos 😥')
+
+    aksjaskjas
