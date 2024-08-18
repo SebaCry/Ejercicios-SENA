@@ -24,7 +24,7 @@ if balota == 'rojo': ## Si el valor de la boleta es rojo
     valorFinal = producto - descuento ## Se le resta el descuento
     print(f'El valor de la comrpra {producto}, el color de la balota {balota}, y valor final es {valorFinal}') ##   Imprimo el valor de la compra
 elif balota == 'verde': ## Si el valor de la boleta es verde
-    descuento = int(producto * 0.2) ##Al prodcuto se le aplica un descuento del 20%
+    descuento = int (producto * 0.2) ##Al prodcuto se le aplica un descuento del 20%
     valorFinal = producto - descuento ## Se le resta el descuento
     print(f'El valor de la compra {producto}, el color de la balota {balota}, y el valor final es {valorFinal}') ##   Imprimo el valor de la compra
 else:
