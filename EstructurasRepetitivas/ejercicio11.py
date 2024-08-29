@@ -7,17 +7,18 @@ numAlturas = 0
 
 
 while True:
-    sex = str(input('¿Cual es tu sexo: ')).lower()
-    if sex == 'femenino':
-        mujeres += 1
-    elif sex == 'hombres':
-        hombres += 1
-    
     edad = int(input('¿Cual es tu edad?: '))
     if edad == 0:
         break
     
-    altura = float(input('¿Cual es tu altura'))
+    sex = str(input('¿Cual es tu sexo?: ')).lower()
+    if sex == 'femenino':
+        mujeres += 1
+    elif sex == 'masculino':
+        hombres += 1
+    
+    
+    altura = float(input('¿Cual es tu altura?: '))
     alturas += altura
     numAlturas += 1
     if altura > 1.70:
@@ -27,7 +28,10 @@ while True:
     
     
 
-promAltura = alturas / numAlturas
-print(f'La cantidad de hombres es: {hombres}, la de mujeres es: {mujeres}, la altura promedio es: {promAltura}, ')
+if numAlturas > 0:
+    promAltura = alturas / numAlturas
+    print(f'La cantidad de hombres es: {hombres}, la de mujeres es: {mujeres}, la altura promedio es: {promAltura}')
+else:
+    print(f'La cantidad de hombres es: {hombres}, la de mujeres es: {mujeres}. No se ingresaron alturas.')
 
 
