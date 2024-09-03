@@ -1,6 +1,9 @@
-numeros = []
-numerosNeg = []
-for i in range(0,10):
+"""Leer 10 números negativos y convertirlos a positivos e imprimir la suma de dichos
+números."""
+
+numeros = [] ##Se crea una variable tipo array para guardar todos los numeros negativos
+numerosNeg = [] ## Se crea
+for i in range(0,3):
     numNeg = float(input('Digita 10 numeros negativos: '))
     numeros.append(numNeg)
 

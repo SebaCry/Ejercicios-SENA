@@ -1,26 +1,28 @@
-mujeres = 0
+"""Calcular el promedio de edades de hombres, mujeres y de todo un grupo de alumnos."""
+
+mujeres = 0  ##Se inicializan 2 contadores (mujeres, hombres) y 2 (edadMujer, edadHombre)acumuladores 
 hombres = 0
 edadMujer = 0
 edadHombre = 0
 
-personas = int(input('¿Cuantas personas hay en el salon?: '))
+personas = int(input('¿Cuantas personas hay en el salon?: ')) ## Se declara una variable personas que digitara cuantas personas hay en el salon
 
-for persona in range(personas):
-    sex = str(input('¿Cual es tu sexo? ¿femenino || masculino?: ')).lower()
+for persona in range(personas): ## Se crea un bucle for que recorrera el rango de personas (lo que digito el usuario)
+    sex = str(input('¿Cual es tu sexo? ¿femenino || masculino?: ')).lower() ## Se crea una variable sex que el usuario digitara si es femenino o masculino 
+    edad = int(input('¿Cual es tu edad?: ')) ##  Se crea una variable que preguntara cual es la edad
     
-    
-    if sex == 'femenino':
-        mujeres += 1
-        edad = int(input('¿Cual es tu edad?: '))
-        edadMujer += edad
-    elif sex == 'masculino':
-        hombres += 1
-        edad = int(input('¿Cual es tu edad?: '))
-        edadHombre += edad
+    if sex == 'femenino': ## Si sex es femenino
+        mujeres += 1 ## A mujeres se le incrementara 1
+        edadMujer += edad ## En el acumulador, se sumaran las edades que digite el usuario
+    elif sex == 'masculino': ## De lo contrario si el sex es masculino 
+        hombres += 1 ## Se incrementara 1 a hombres
+        edadHombre += edad ## Al acumulador, se le sumaran las edades totales
     else:
-        print('Ingresa un valor valido')
-promMujer = edadMujer / mujeres
-promHombre = edadHombre / hombres 
-sumaTotal = (edadHombre + edadMujer) / (mujeres + hombres)
+        print('Ingresa un valor valido') ## Imprime un mensaje de error
 
-print(f'El promedio de mujeres es: {round(promMujer)}, el promedio de hombres es: {round(promHombre)}, y el promedio total es: {round(sumaTotal)}')
+promMujer = edadMujer / mujeres ## Se halla el promedio de las edades de mujeres
+promHombre = edadHombre / hombres ## Se halla el promedio de las edades de hombres
+sumaTotal = (edadHombre + edadMujer) / (mujeres + hombres) ## Se halla el promedio general de todos los alumnos
+
+print(f'El promedio de mujeres es: {promMujer}, el promedio de hombres es: {promHombre}, y el promedio total es: {sumaTotal}')
+## Se imprimen los diferentes promedios, usando el metodo round para redondear
