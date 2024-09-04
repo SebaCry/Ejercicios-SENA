@@ -20,4 +20,3 @@ for i in range(0, 20): ## Se crea un bucle que repita los procedimientos 20 vece
 promedio = notaProm / 20 ## Se saca el promedio, con el acumulador dividiendolo por la cantidad de estudiantes
 
 print(f'La calificacion mas alta del promedio es {max} y la nota mas minima del promedio es {min}. El promedio total es {promedio}') ## Se imprime cual fue la nota maxima, minima, y el promedio de los estudiantes
-
