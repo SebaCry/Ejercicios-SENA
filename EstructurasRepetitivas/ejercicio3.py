@@ -3,7 +3,7 @@ Realizar un algoritmo para calcular el promedio y la calificación más alta y m
 de todo el grupo."""
 
 max = 0 ## Se crea una variable con un limite que se igual a 0
-min = 100 ## Se crea una variable con un limite que sea de 20
+min = 100 ## Se crea una variable con un limite que sea de 100
 notaProm = 0 ## Se crea un acumulador que sume el promedio por cada estudiante
 
 
