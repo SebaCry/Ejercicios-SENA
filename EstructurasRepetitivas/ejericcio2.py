@@ -12,6 +12,6 @@ for i in range(0,10): ##Se crea un bucle de 0 a 20 que va a repetir lso procedim
         numerosConver.append(neg) ## Al array numerosConver se le agregaran los numeros convertidos
         suma = sum(numerosConver) ## Se suman todos los digitos del array de los numeros convertidos
     else: ## De lo contrario
-        print('Coloca un numero positivo') ## Se imprime un mensaje de error
+        print('Coloca un numero negativo') ## Se imprime un mensaje de error
 
 print(f'Los numeros convertidos son {numerosConver} La suma de los numeros es igual a: {suma}')
