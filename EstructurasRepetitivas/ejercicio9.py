@@ -22,7 +22,7 @@ for persona in range(personas): ## Se crea un bucle for que recorrera el rango d
 
 promMujer = edadMujer / mujeres ## Se halla el promedio de las edades de mujeres
 promHombre = edadHombre / hombres ## Se halla el promedio de las edades de hombres
-sumaTotal = (edadHombre + edadMujer) / (mujeres + hombres) ## Se halla el promedio general de todos los alumnos
+promedioTotal = (edadHombre + edadMujer) / (mujeres + hombres) ## Se halla el promedio general de todos los alumnos
 
-print(f'El promedio de mujeres es: {promMujer}, el promedio de hombres es: {promHombre}, y el promedio total es: {sumaTotal}')
-## Se imprimen los diferentes promedios, usando el metodo round para redondear
+print(f'El promedio de mujeres es: {promMujer}, el promedio de hombres es: {promHombre}, y el promedio total es: {promedioTotal}')
+## Se imprimen los diferentes promedios.

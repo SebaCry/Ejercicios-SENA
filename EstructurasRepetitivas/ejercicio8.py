@@ -17,6 +17,8 @@ for estudiante in range(0,23): ## Se hace un bucle for que repetira 23 veces los
         estudiantes3 += 1 ## La cantidad de estudiantes que sacaron  mayor o igual a 70 y sea menor a 80 incrementara 1
     elif nota >= 80: ## Si nota es mayor o igual a 80
         estudiantes4 += 1 ## La cantidad de estudiantes que sacaron menos o igual de 80 incrementara 1
+    else:
+        print('Mala digitacion') ## Mensaje de error
 
 print(f'Esudiantes menores a 50: {estudiantes1}\n Estudiantes mayores de 50 pero menores de 70: {estudiantes2}\n Estudiantes mayores de 70 pero menores de 80: {estudiantes3}\n Estudiantes mayores a 80: {estudiantes4}')
 ## Se imprimen los valores de estudiantes y las estadisticas

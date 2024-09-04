@@ -1,3 +1,7 @@
+"""La oficina de tránsito de Ibagué desea saber, de los n autos que entran a la ciudad
+de Ibagué, cuantos entran con calcomanía de cada color. Conociendo el ultimo
+dígito de la placa de cada carro,"""
+
 amarillo = 0 ## ## A las variables amarillo, rosa, roja, verde y azul se les inicializa con 0, ya que seran contadores para ver cuantos hay
 rosa = 0
 roja = 0
