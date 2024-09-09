@@ -15,6 +15,7 @@ while True:  # Bucle infinito para ingresar datos hasta que se ingrese una edad 
         if edad == 0:  # Si la edad es 0, se rompe el bucle
             break
         
+        
         sex = input('¿Cuál es tu sexo (masculino/femenino)?: ').lower()  # Se pide el sexo y se convierte a minúsculas
         if sex == 'femenino':  # Si el sexo es femenino
             mujeres += 1  # Se incrementa el contador de mujeres
