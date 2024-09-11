@@ -5,3 +5,9 @@ cont = 1 ## Se inicia un contador en uno
 for i in range(1,21): ## Se crea un bucle for de rango de 1 a 20
     cont *= i ## Ese contador se va a estar actualizando y multiplicando por el indice del bucle ejemplo = (1 * 1 = 1) -> (1 * 2 = 2) -> (2 * 3 = 6) ...
     print(cont) ## Se imprime el contador
+
+    1 = 1 * 1
+    1 = 1 * 2
+    2 = 2 * 3
+    6 = 6 * 4
+    24 = 24 * 5

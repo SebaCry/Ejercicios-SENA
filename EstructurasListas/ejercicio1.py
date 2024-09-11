@@ -9,7 +9,6 @@ i = 0
 while i < nStudents:
     datesNames = str(input('Ingresa tu nombre: ')).lower().strip()
     datesAges = int(input('Ingresa tu edad: '))
-
     aprendices.append(datesNames)
     edades.append(datesAges)
 
@@ -49,7 +48,6 @@ print(' ')
 print(f'Los primeros 10 aprendices de la lista son: {aprendices[0:10]}')
 print(' ')
 #-----------------------------------------------------------------------------------------------------------
-
 print(f'Los ultimos 10 aprendices de la lista: {aprendices[-1: -11: -1]}')
 print(' ')
 #-----------------------------------------------------------------------------------------------------------
