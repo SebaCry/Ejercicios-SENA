@@ -18,9 +18,14 @@ while True: ## Se crea un bucle infinito para hacer los diferentes procedimiento
             cuestionNombre = str(input('Ingrese su nombre completo: ')) ## Se pregunta el nombre completo de la persona
             cuestionDocumento = str(input('Ingresa tu numero de identidad: ')) ## Se le pregunta el documento completo a la personas
             
-            if cuestionDocumento in documentosPersona and cuestionNombre in nombresPersona: ## Se valida con anterioridad si tanto el documento o como el nombre estan en las listas
-                print('El documento esta duplicado o el nombre esta duplicado\n') ## Se imprime un mensaje de error si ya esta registrado el nombre o el documento repetido
+            if cuestionDocumento in documentosPersona or cuestionNombre in nombresPersona: ## Se valida con anterioridad si tanto el documento o como el nombre estan en las listas
+                print('El documento esta duplicado o el nombre esta duplicado\n')
+                documentosPersona.remove(cuestionDocumento)## Se imprime un mensaje de error si ya esta registrado el nombre o el documento repetido
+                nombresPersona.remove(cuestionCompra)
+                continue
             else: ## De lo contrario
+                documentosPersona.append(cuestionDocumento) ## Ya despues de la validacion, se agrega el documento a la lista de documentos
+                nombresPersona.append(cuestionNombre)
                 print(f'Hay {cantidadBoletas} disponibles') ##Se imprime el mensaje de cuantas boletas hay
                 cuestionCompra = int(input('Cuantas boletas vas a comprar?: ')) ## Asi mismo se crea una variable entera para saber cuantas boletas va a commprar 
                 if cuestionCompra > 0 and cuestionCompra <= 4: ## Si las boletas registradas es mayor a 0 y menor o igual 4
@@ -29,9 +34,6 @@ while True: ## Se crea un bucle infinito para hacer los diferentes procedimiento
                 else:
                     print('Lo maximo que puedes comprar es de 4 boletas por persona\n') ## De lo contrario, es imprimir un mensaje de error
                     continue ## El continue vuelve a hacer el bucle
-        
-        documentosPersona.append(cuestionDocumento) ## Ya despues de la validacion, se agrega el documento a la lista de documentos
-        nombresPersona.append(cuestionNombre) ## Ya despues de la validacion se agrega el nombre a la lista de nombres
 
         if cantidadBoletas == 0: ## Si la cantidad de boletas llega a 0
             print('La boletas se acabaron') ## Se imprime el informe
@@ -40,7 +42,7 @@ while True: ## Se crea un bucle infinito para hacer los diferentes procedimiento
                 print(f'Esta es la lista general de personas y documentos {(documentos,nombres)}')
             break ## Se sale del bucle
 
-    except ValueError and AttributeError and TypeError: ## Con el except del mensaje ValueError
+    except ValueError: ## Con el except del mensaje ValueError
         print('Ingresa numeros validos\n') ## Imprime el mensaje de error
         continue ## Continua con el bucle
 
